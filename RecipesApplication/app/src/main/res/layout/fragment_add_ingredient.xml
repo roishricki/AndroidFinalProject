@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.addIngredientFragment">
+
+    <LinearLayout
+        android:layout_marginTop="200px"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/addIngredient_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Add Ingredient"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display3"
+            android:textColor="#00da96"
+            android:textSize="34sp"
+            app:fontFamily="@font/poppins_medium" />
+
+        <TextView
+            android:layout_marginTop="150px"
+            android:id="@+id/name_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Ingredient Name"
+            android:textSize="24sp"
+            app:fontFamily="@font/poppins_medium" />
+
+        <EditText
+            android:id="@+id/editText_name_ingredient"
+            android:layout_width="match_parent"
+            android:layout_height="200px"
+       />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="350px"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/back_button"
+                android:layout_width="350px"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="100px"
+                android:layout_marginRight="150px"
+                android:text="Back"
+                app:cornerRadius="50px"
+                app:backgroundTint="#FB906E" />
+
+            <Button
+                android:id="@+id/add_button"
+                android:layout_width="350px"
+                android:layout_height="wrap_content"
+                android:text="Add"
+                app:cornerRadius="50px"
+                app:backgroundTint="#FB906E" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/ingredient_list"
+            android:layout_width="match_parent"
+            android:layout_height="150px"
+            android:layout_marginLeft="150px"
+            android:layout_marginTop="150px"
+            android:layout_marginRight="150px"
+            android:text="My Ingredients"
+            app:backgroundTint="#01CD8E"
+            app:cornerRadius="50px" />
+    </LinearLayout>
+
+</FrameLayout>
+

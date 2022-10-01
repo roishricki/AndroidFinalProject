@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.addLinkFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="250px"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Add Link"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#00da96"
+            android:textSize="60sp"
+            app:fontFamily="sans-serif-condensed-medium"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="700px"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:textColor="#FB906E"
+            android:id="@+id/textViewRecipeName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Recipe Name"
+            android:textSize="25sp"
+            app:fontFamily="sans-serif-condensed-medium"/>
+
+        <EditText
+            android:id="@+id/recipename"
+            android:layout_width="match_parent"
+            android:layout_height="50sp" />
+
+        <TextView
+            android:textColor="#FB906E"
+            android:id="@+id/textViewRecipeLink"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="LINK"
+            android:textSize="25sp"
+            app:fontFamily="sans-serif-condensed-medium"/>
+
+        <EditText
+            android:id="@+id/recipelink"
+            android:layout_width="match_parent"
+            android:layout_height="50sp"
+            />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="1300px"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/addlinkbutton"
+            android:layout_width="match_parent"
+            android:layout_height="60sp"
+            android:text="add"
+            card_view:backgroundTint="#01CD8E"
+            card_view:cornerRadius="20sp" />
+
+    </LinearLayout>
+</FrameLayout>

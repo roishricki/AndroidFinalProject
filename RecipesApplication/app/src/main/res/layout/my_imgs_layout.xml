@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_marginTop="100px"
+    android:id="@+id/my_links_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:tag="cards main container">
+
+        <TextView
+            android:id="@+id/textViewRecipeName"
+            android:layout_width="match_parent"
+            android:layout_height="100px"
+            android:gravity="center"
+            android:text="Recipe Name"
+            android:textSize="30sp"
+            card_view:fontFamily="@font/poppins_medium" />
+
+        <ImageView
+            android:layout_marginTop="40px"
+            android:minHeight="100dp"
+            android:id="@+id/imageView2"
+            android:scaleType="fitXY"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+             />
+
+
+</LinearLayout>
+
+

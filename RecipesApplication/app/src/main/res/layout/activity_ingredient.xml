@@ -1,0 +1,65 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activites.IngredientActivity"
+    android:orientation="horizontal"
+    >
+<!--    <fragment-->
+<!--        android:id="@+id/fragment2"-->
+<!--        android:name="androidx.navigation.fragment.NavHostFragment"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:defaultNavHost="true"-->
+<!--        app:navGraph="@navigation/nav" />-->
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/ingredient_recycle_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+<!--        android:layout_marginBottom="450px"-->
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+<!--    <Button-->
+<!--        android:id="@+id/add_ingredient_button"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginLeft="430px"-->
+<!--        android:layout_marginRight="430px"-->
+<!--        android:layout_marginBottom="50px"-->
+<!--        android:layout_weight="0.10"-->
+<!--        android:text="+"-->
+<!--        android:textSize="50sp"-->
+<!--        app:backgroundTint="#00da96"-->
+<!--        app:cornerRadius="80px"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintLeft_toLeftOf="parent"-->
+<!--        app:layout_constraintRight_toRightOf="parent" />-->
+
+
+
+
+
+    <!--    <com.google.android.material.floatingactionbutton.FloatingActionButton-->
+<!--        android:id="@+id/add_ingredient_button"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_weight="1"-->
+<!--        android:clickable="true"-->
+<!--        android:layout_alignParentButton="true"-->
+<!--        android:layout_alignParentEnd="true"-->
+<!--        android:layout_margin="16dp"-->
+<!--        app:backgroundColor=""-->
+<!--        android:src="@drawable/custom_card_style" />-->
+</androidx.constraintlayout.widget.ConstraintLayout>

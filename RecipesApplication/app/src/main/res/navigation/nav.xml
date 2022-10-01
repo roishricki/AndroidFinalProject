@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav"
+    app:startDestination="@id/loginFragment">
+
+<!--    <action-->
+<!--        android:id="@+id/action_IngredientActivity_to_addIngredientFragment"-->
+<!--        app:destination="@id/ingredient"-->
+<!--        app:launchSingleTop="false"-->
+<!--        app:popUpTo="@+id/mobile_navigation"-->
+<!--        app:popUpToInclusive="true" />-->
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.recipesapplication.fragments.LoginFragment"
+        android:label="fregment_login"
+        tools:layout="@layout/fregment_login" >
+        <action
+            android:id="@+id/action_loginFragment_to_registerFragment"
+            app:destination="@id/registerFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_homePageApp"
+            app:destination="@id/homePageApp" />
+    </fragment>
+    <fragment
+        android:id="@+id/registerFragment"
+        android:name="com.example.recipesapplication.fragments.RegisterFragment"
+        android:label="fragment_register"
+        tools:layout="@layout/fragment_register" >
+        <action
+            android:id="@+id/action_registerFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/homePageApp"
+        android:name="com.example.recipesapplication.fragments.HomePageApp"
+        android:label="fragment_home_page_app"
+        tools:layout="@layout/fragment_home_page_app" >
+        <action
+            android:id="@+id/action_homePageApp_to_addRecipesMenu"
+            app:destination="@id/addRecipesMenu" />
+        <action
+            android:id="@+id/action_homePageApp_to_ingredient"
+            app:destination="@id/ingredient" />
+        <action
+            android:id="@+id/action_homePageApp_to_addIngredientFragment"
+            app:destination="@id/addIngredientFragment" />
+        <action
+            android:id="@+id/action_homePageApp_to_myRecipesMenu"
+            app:destination="@id/myRecipesMenu" />
+    </fragment>
+    <fragment
+        android:id="@+id/addRecipesMenu"
+        android:name="com.example.recipesapplication.fragments.addRecipesMenu"
+        android:label="fragment_add_recipes_menu"
+        tools:layout="@layout/fragment_add_recipes_menu" >
+        <action
+            android:id="@+id/action_addRecipesMenu_to_addLinkFragment"
+            app:destination="@id/addLinkFragment" />
+        <action
+            android:id="@+id/action_addRecipesMenu_to_addImgFragment2"
+            app:destination="@id/addImgFragment" />
+        <action
+            android:id="@+id/action_addRecipesMenu_to_createRecipeActivity"
+            app:destination="@id/createRecipeActivity" />
+    </fragment>
+    <fragment
+        android:id="@+id/addLinkFragment"
+        android:name="com.example.recipesapplication.fragments.addLinkFragment"
+        android:label="fragment_add_link"
+        tools:layout="@layout/fragment_add_link" >
+        <action
+            android:id="@+id/action_addLinkFragment_to_homePageApp"
+            app:destination="@id/homePageApp" />
+    </fragment>
+    <activity
+        android:id="@+id/ingredient"
+        android:name="com.example.recipesapplication.activites.IngredientActivity"
+        android:label="activity_ingredient"
+        tools:layout="@layout/activity_ingredient" >
+    </activity>
+    <fragment
+        android:id="@+id/addIngredientFragment"
+        android:name="com.example.recipesapplication.fragments.addIngredientFragment"
+        android:label="fragment_add_ingredient"
+        tools:layout="@layout/fragment_add_ingredient" >
+        <action
+            android:id="@+id/action_addIngredientFragment_to_ingredient"
+            app:destination="@id/ingredient" />
+        <action
+            android:id="@+id/action_addIngredientFragment_to_homePageApp"
+            app:destination="@id/homePageApp" />
+    </fragment>
+    <fragment
+        android:id="@+id/addImgFragment"
+        android:name="com.example.recipesapplication.fragments.addImgFragment"
+        android:label="fragment_add_img"
+        tools:layout="@layout/fragment_add_img" >
+        <action
+            android:id="@+id/action_addImgFragment_to_addRecipesMenu"
+            app:destination="@id/addRecipesMenu" />
+    </fragment>
+    <fragment
+        android:id="@+id/myRecipesMenu"
+        android:name="com.example.recipesapplication.fragments.myRecipesMenu"
+        android:label="fragment_my_recipes_menu"
+        tools:layout="@layout/fragment_my_recipes_menu" >
+        <action
+            android:id="@+id/action_myRecipesMenu2_to_myLinksActivity"
+            app:destination="@id/myLinksActivity" />
+        <action
+            android:id="@+id/action_myRecipesMenu_to_myImgActivity"
+            app:destination="@id/myImgActivity" />
+        <action
+            android:id="@+id/action_myRecipesMenu_to_myAppRecipeMenuActivity"
+            app:destination="@id/myAppRecipeMenuActivity" />
+    </fragment>
+    <activity
+        android:id="@+id/myLinksActivity"
+        android:name="com.example.recipesapplication.activites.MyLinksActivity"
+        android:label="activity_my_links"
+        tools:layout="@layout/activity_my_links" />
+    <activity
+        android:id="@+id/myImgActivity"
+        android:name="com.example.recipesapplication.activites.MyImgActivity"
+        android:label="activity_my_img"
+        tools:layout="@layout/activity_my_img" />
+    <activity
+        android:id="@+id/createRecipeActivity"
+        android:name="com.example.recipesapplication.activites.CreateRecipeActivity"
+        android:label="activity_create_recipe"
+        tools:layout="@layout/activity_create_recipe" />
+    <activity
+        android:id="@+id/myAppRecipeMenuActivity"
+        android:name="com.example.recipesapplication.activites.MyAppRecipeMenuActivity"
+        android:label="activity_my_app_recipe_menu"
+        tools:layout="@layout/activity_my_app_recipe_menu" />
+</navigation>
